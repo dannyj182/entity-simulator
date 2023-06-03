@@ -32,8 +32,8 @@ async function executeCallback(number) {
                 'Content-Type': contentType,
             },
         });
-        
-        console.log(new Date().toLocaleString(), response.status, response.statusText);
+
+        console.log(new Date().toLocaleString(), response.status, response.statusText, ENTITY_TYPE, number);
 
     } catch (error) {
         console.error(error);
